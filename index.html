@@ -76,11 +76,15 @@
     .testimonials {
       background-color: #f9fafb;
       padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .testimonial {
       margin-bottom: 2rem;
       font-style: italic;
+      max-width: 500px;
     }
 
     .cta-button {
@@ -106,6 +110,21 @@
       margin: 10px;
       border-radius: 8px;
     }
+
+    /* Стиль для изображения сбоку от текста */
+    .testimonial-img {
+      max-width: 400px;
+      margin-left: 30px;
+      border-radius: 12px;
+    }
+
+    .image-right {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 30px;
+      border-radius: 12px;
+    }
+
   </style>
 </head>
 <body>
@@ -133,6 +152,9 @@
       This isn’t a “heart app.” It’s a medical device, licensed by Health Canada. And it lives in your pocket.</p>
     <p><strong>One-time cost. Lifetime access.</strong><br>
       No subscriptions. No hardware. One payment for unlimited use—yours for life.</p>
+
+    <!-- Картинка рядом с текстом -->
+    <img src="https://raw.githubusercontent.com/mykhailorybalka1/images/main/lady2.png" alt="How it works - Recording heart sounds" class="image-right" />
   </section>
 
   <section>
@@ -143,22 +165,18 @@
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/USZXq88S5OQ" frameborder="0" allowfullscreen></iframe>
     </div>
-    
-    <!-- Изображение процесса работы -->
-    <img src="https://raw.githubusercontent.com/mykhailorybalka1/images/main/lady2.jpg" alt="How it works - Recording heart sounds" style="width:100%; max-width:600px; border-radius: 12px; margin-top: 30px;" />
   </section>
 
   <section class="testimonials">
-    <h2>Real People, Real Impact</h2>
-    <div class="testimonial">“My doctor took me seriously the moment I showed her the murmur reading.”<br><strong>— J. Mendez, age 56</strong></div>
-    <div class="testimonial">“I’ve had chest flutters for years. Now I finally have evidence.”<br><strong>— K. Patel, age 48</strong></div>
-    <p style="margin-top: 30px;"><strong>1 in 10 adults over 60</strong> has undiagnosed heart valve disease. Don’t be one of them.</p>
-    <a href="https://apps.apple.com/ca/app/stethophone/id6471914704" class="cta-button">Check Your Heart. Own the Data.</a>
-
-    <!-- Галерея с изображениями пользователей -->
-    <div class="gallery">
-      <img src="https://raw.githubusercontent.com/mykhailorybalka1/images/main/all.png" alt="Heart check on the go" />
-      <img src="https://raw.githubusercontent.com/mykhailorybalka1/images/main/lady.png" alt="User sharing heart results" />
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="https://raw.githubusercontent.com/mykhailorybalka1/images/main/all.png" alt="Heart check on the go" />
+      </div>
+      <h2>Real People, Real Impact</h2>
+      <div class="testimonial">“My doctor took me seriously the moment I showed her the murmur reading.”<br><strong>— J. Mendez, age 56</strong></div>
+      <div class="testimonial">“I’ve had chest flutters for years. Now I finally have evidence.”<br><strong>— K. Patel, age 48</strong></div>
+      <p style="margin-top: 30px;"><strong>1 in 10 adults over 60</strong> has undiagnosed heart valve disease. Don’t be one of them.</p>
+      <a href="https://apps.apple.com/ca/app/stethophone/id6471914704" class="cta-button">Check Your Heart. Own the Data.</a>
     </div>
   </section>
 </body>
